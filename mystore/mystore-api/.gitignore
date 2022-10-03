@@ -39,7 +39,4 @@ yarn-error.log*
 .eslintcache
 .npm
 .env
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+
