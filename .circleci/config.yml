@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   # orbs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@5.0.2
+  eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
   # different jobs are calles later in the workflows sections
 jobs:
@@ -13,17 +14,17 @@ jobs:
       # install node and checkout code
       - checkout
       - node/install-packages:
-          pkg-manager: yarn         
+          pkg-manager: yarn
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
           command: |
-            echo "NODE --version" 
+            echo "NODE --version"
             echo $(node --version)
-            echo "NPM --version" 
+            echo "NPM --version"
             echo $(npm --version)
             npm run frontend:install
-      # TODO: Install dependencies in the the backend API          
+      # TODO: Install dependencies in the the backend API
       - run:
           name: Install API Dependencies
           command: |
@@ -36,7 +37,7 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
-      # TODO: Build the backend API      
+      # TODO: Build the backend API
       - run:
           name: API Build
           command: |
@@ -48,7 +49,7 @@ jobs:
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
-          node-version: '16.13' 
+          node-version: '16.13'
       - aws-cli/setup
       - checkout
       - run:
@@ -58,7 +59,7 @@ jobs:
             npm run frontend:install
             npm run frontend:build
             npm run frontend:deploy
-            
+
 workflows:
   mystore:
     jobs:
