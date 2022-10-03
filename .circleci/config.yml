@@ -62,7 +62,7 @@ jobs:
 workflows:
   mystore:
     jobs:
-      - build
+      - build:
           filters:
             branches:
               only:
