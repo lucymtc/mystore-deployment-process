@@ -1,10 +1,11 @@
 {
-    "scripts": {
-        "frontend:install": "cd mystore/mystore-frontend && npm install -f",
-        "frontend:lint": "cd mystore/mystore-frontend && npm run lint",
-        "frontend:build": "cd mystore/mystore-frontend && npm run build",
-        "frontend:deploy": "cd mystore/mystore-frontend && npm run deploy",
-        "api:build": "cd mystore/mystore-api && npm run build",
-        "api:deploy": "cd mystore/mystore-api && npm run deploy"
-    }
+  "scripts": {
+    "frontend:install": "cd mystore/mystore-frontend && npm install -f",
+    "frontend:lint": "cd mystore/mystore-frontend && npm run lint",
+    "frontend:build": "cd mystore/mystore-frontend && npm run build",
+    "frontend:deploy": "cd mystore/mystore-frontend && npm run deploy",
+    "api:install": "cd mystore/mystore-api && npm install -f",
+    "api:build": "cd mystore/mystore-api && npm run build",
+    "api:deploy": "cd mystore/mystore-api && npm run deploy"
+  }
 }
