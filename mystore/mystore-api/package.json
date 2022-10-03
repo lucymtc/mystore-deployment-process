@@ -16,7 +16,7 @@
     "test": "npm run build && db-migrate -e test up  && ENV=test jasmine & db-migrate reset -e test",
     "tsc": "npx tsc",
     "clean": "rm -rf dist/ || true",
-    "build": "npm install . && npm run clean && tsc && cp -rf src/config dist/config && cp -R .elasticbeanstalk dist/.elasticbeanstalk && cp package.json dist/package.json && cd dist && zip -r -D ../app.zip *",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config dist/config && cp package.json dist/package.json && cd dist && zip -r -D ../app.zip *",
     "deploy": "npm run build && eb list && eb use mystore-api-dev && eb deploy"
   },
   "dependencies": {
