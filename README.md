@@ -12,9 +12,10 @@ URL http://mystore-angular-lucymtc.s3-website-us-east-1.amazonaws.com/
 ---
 
 ### Documentation
-[Dependencies](documentation/Dependencies.md)
-[CircleCI Pipeline & Configuration](documentation/CircleCi.md)
-[AWS structure and Diagram](documentation/AWSServices.md)
+
+- [Dependencies](documentation/Dependencies.md)
+- [CircleCI Pipeline & Configuration](documentation/CircleCi.md)
+- [AWS structure and Diagram](documentation/AWSServices.md)
 
 ### Project Configuration screenshots
 
