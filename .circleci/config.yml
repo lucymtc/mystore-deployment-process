@@ -40,7 +40,7 @@ jobs:
       - run:
           name: API Build
           command: |
-            npm run api:build
+            echo "TODO: Build API "
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -60,7 +60,7 @@ jobs:
             npm run frontend:deploy
             
 workflows:
-  udagram:
+  mystore:
     jobs:
       - build
       - hold:
