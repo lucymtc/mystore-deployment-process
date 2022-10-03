@@ -19,7 +19,24 @@ URL http://mystore-angular-lucymtc.s3-website-us-east-1.amazonaws.com/
 - RDS database running Postgres.
 - S3 bucket
 
+### Application Diagram
+- created with https://online.visual-paradigm.com/
+
+![Diagram](./documentation/images/diagram.png)
+
+### CircleCi Pipeline Process
+- Prepare environment by setting up Node & npm, AWS CLI, EB CLI.
+- Install dependencies for FrontEnd app
+- Install dependencies for Back End API
+- Deploy Front End APP
+- Deploy Back End API
+
 ### Configuration screenshots
+
+**MyStore CircleCI**
+![Build & Deploy pass](./documentation/images/circleAPI_deploy.png)
+
+![CircleCI Env variables](./documentation/images/circleci-env.png)
 
 **MyStore APP front end S3 Bucket**
 
@@ -29,8 +46,7 @@ URL http://mystore-angular-lucymtc.s3-website-us-east-1.amazonaws.com/
 
 ![MyStore RDS Database](./documentation/images/mystore-udacity-database.png)
 
-**MyStore Elastic kBeanstalk**
+**MyStore Elastic Beanstalk**
 Known issue to be fixed, health degraded, cause: Impaired services on all instances.
 
 ![MyStore RDS Database](./documentation/images/mystore-udacity-eb.png)
-
