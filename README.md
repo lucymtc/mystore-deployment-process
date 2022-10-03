@@ -24,3 +24,13 @@ URL http://mystore-angular-lucymtc.s3-website-us-east-1.amazonaws.com/
 **MyStore APP front end S3 Bucket**
 
 ![MyStore S3 Bucket](./documentation/images/mystore-udacity-s3bucket.png)
+
+**MyStore RDS database on Postgres**
+
+![MyStore RDS Database](./documentation/images/mystore-udacity-database.png)
+
+**MyStore Elastic kBeanstalk**
+Known issue to be fixed, health degraded, cause: Impaired services on all instances.
+
+![MyStore RDS Database](./documentation/images/mystore-udacity-eb.png)
+
