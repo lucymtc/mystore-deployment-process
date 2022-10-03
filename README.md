@@ -11,27 +11,12 @@ URL http://mystore-angular-lucymtc.s3-website-us-east-1.amazonaws.com/
 
 ---
 
-### Dependencies and configuration.
+### Documentation
+[Dependencies](documentation/Dependencies.md)
+[CircleCI Pipeline & Configuration](documentation/CircleCi.md)
+[AWS structure and Diagram](documentation/AWSServices.md)
 
-- Node v16 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
-- npm 7 (LTS) or more recent
-- AWS CLI v2
-- RDS database running Postgres.
-- S3 bucket
-
-### Application Diagram
-- created with https://online.visual-paradigm.com/
-
-![Diagram](./documentation/images/diagram.png)
-
-### CircleCi Pipeline Process
-- Prepare environment by setting up Node & npm, AWS CLI, EB CLI.
-- Install dependencies for FrontEnd app
-- Install dependencies for Back End API
-- Deploy Front End APP
-- Deploy Back End API
-
-### Configuration screenshots
+### Project Configuration screenshots
 
 **MyStore CircleCI**
 ![Build & Deploy pass](./documentation/images/circleAPI_deploy.png)
